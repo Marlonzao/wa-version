@@ -25,9 +25,9 @@ export async function fetchCurrentVersion(): Promise<string | null> {
   const responseSW = await fetch(`${WA_URL}serviceworker.js`, {
     headers: {
       'user-agent': WA_USER_AGENT,
-      'accept-language': 'en-US,en;q=1',
+      'accept-language': 'pt-BR,pt;q=1',
       'sec-fetch-mode': 'navigate',
-      cookie: 'wa_lang_pref=en',
+      cookie: 'wa_lang_pref=pt_BR',
       pragma: 'no-cache',
       'cache-control': 'no-cache',
     },

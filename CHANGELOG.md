@@ -1,3 +1,5 @@
+# (2024-06-11)
+
 ## [1.4.218](https://github.com/wppconnect-team/wa-version/compare/v1.4.217...v1.4.218) (2024-06-11)
 
 ### Bug Fixes

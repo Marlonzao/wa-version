@@ -62,27 +62,3 @@ jobs:
       - name: Release
         if: ${{ steps.update.outputs.hasChanges == 'true' }}
         run: npm run release -- --ci -i patch
-
-      - name: Discord Notification (Outdated)
-        uses: sarisia/actions-status-discord@v1
-        if: ${{ steps.update.outputs.hasOutdated == 'true' }}
-        with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          nodetail: true
-          color: 0xCB2431
-          title: Outdated WhatsApp WEB versions
-          description: |
-            Some versions of WhatsApp WEB doesn't work anymore.
-            Outdated versions: `${{ join(fromJSON(steps.update.outputs.outdated), '`, `') }}`
-
-      - name: Discord Notification (New)
-        uses: sarisia/actions-status-discord@v1
-        if: ${{ steps.update.outputs.hasNewVersion == 'true' }}
-        with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          nodetail: true
-          color: 0x28A745
-          title: New version for WhatsApp WEB!
-          description: |
-            A new version of WhatsApp WEB has just been released.
-            Version Number: `${{ fromJSON(steps.update.outputs.version) }}`

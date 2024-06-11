@@ -1,13 +1,13 @@
 {
-  "name": "@wppconnect/wa-version",
+  "name": "eusoumarlon/wa-version",
   "version": "1.4.218",
   "description": "List of WhatsApp Web HTML",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "Edgard Messias",
-    "email": "edgardmessias@gmail.com",
-    "url": "https://github.com/edgardmessias"
+    "name": "Marlon Oliveira",
+    "email": "marlon@multipedidos.com.br",
+    "url": "https://github.com/Marlonzao"
   },
   "license": "Apache-2.0",
   "scripts": {

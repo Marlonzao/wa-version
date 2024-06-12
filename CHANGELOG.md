@@ -1,3 +1,9 @@
+## 1.4.220 (2024-06-12)
+
+### Bug Fixes
+
+- Added new version: 2.3000.1014144760-alpha ([1644ec9](https://github.com/Marlonzao/wa-version/commit/1644ec9bfaae4bf6b7c71cae116718b23591d0a5))
+
 # (2024-06-11)
 
 ## [1.4.218](https://github.com/wppconnect-team/wa-version/compare/v1.4.217...v1.4.218) (2024-06-11)

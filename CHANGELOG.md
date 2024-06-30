@@ -1,3 +1,9 @@
+## [1.4.269](https://github.com/Marlonzao/wa-version/compare/v1.4.268...v1.4.269) (2024-06-30)
+
+### Bug Fixes
+
+- Removed outdated version: 2.2413.51-beta ([cbece8a](https://github.com/Marlonzao/wa-version/commit/cbece8a9fad54236aa1a14c891e7fe3d26e3fe65))
+
 ## [1.4.268](https://github.com/Marlonzao/wa-version/compare/v1.4.267...v1.4.268) (2024-06-29)
 
 ### Bug Fixes

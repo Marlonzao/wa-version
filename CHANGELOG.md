@@ -1,3 +1,9 @@
+## [1.4.299](https://github.com/Marlonzao/wa-version/compare/v1.4.298...v1.4.299) (2024-07-15)
+
+### Bug Fixes
+
+- Added new version: 2.3000.1014892255-alpha ([1b3ecfd](https://github.com/Marlonzao/wa-version/commit/1b3ecfd6a5f95d3846ff2e04bf9e9b25d30d1f16))
+
 ## [1.4.298](https://github.com/Marlonzao/wa-version/compare/v1.4.297...v1.4.298) (2024-07-15)
 
 ### Bug Fixes

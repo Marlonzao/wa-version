@@ -1813,7 +1813,13 @@
       "beta": false,
       "released": "2024-07-31T19:34:51.780Z",
       "expire": "2024-07-31T19:34:51.780Z"
+    },
+    {
+      "version": "2.3000.1015307164-alpha",
+      "beta": false,
+      "released": "2024-08-01T00:27:48.364Z",
+      "expire": "2024-08-01T00:27:48.364Z"
     }
   ],
-  "currentAlpha": "2.3000.1015294185-alpha"
+  "currentAlpha": "2.3000.1015307164-alpha"
 }

@@ -1981,7 +1981,13 @@
       "beta": false,
       "released": "2024-08-10T07:08:11.512Z",
       "expire": "2024-08-10T07:08:11.512Z"
+    },
+    {
+      "version": "2.3000.1015580128-alpha",
+      "beta": false,
+      "released": "2024-08-11T16:07:29.875Z",
+      "expire": "2024-08-11T16:07:29.875Z"
     }
   ],
-  "currentAlpha": "2.3000.1015570063-alpha"
+  "currentAlpha": "2.3000.1015580128-alpha"
 }

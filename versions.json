@@ -2413,7 +2413,13 @@
       "beta": false,
       "released": "2024-09-09T20:35:31.921Z",
       "expire": "2024-09-09T20:35:31.921Z"
+    },
+    {
+      "version": "2.3000.1016343391-alpha",
+      "beta": false,
+      "released": "2024-09-10T00:25:35.712Z",
+      "expire": "2024-09-10T00:25:35.712Z"
     }
   ],
-  "currentAlpha": "2.3000.1016334466-alpha"
+  "currentAlpha": "2.3000.1016343391-alpha"
 }

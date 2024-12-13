@@ -62,3 +62,7 @@ jobs:
       - name: Release
         if: ${{ steps.update.outputs.hasChanges == 'true' }}
         run: npm run release -- --ci -i patch
+
+      - name: Publish
+        if: ${{ steps.update.outputs.hasChanges == 'true' }}
+        run: npm publish      

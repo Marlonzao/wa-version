@@ -78,7 +78,11 @@ jobs:
         if: ${{ steps.update.outputs.hasChanges == 'true' || inputs.force_publish == true }}
         id: release
         run: |
-          npm run release -- --ci -i patch
+          if [ "${{ inputs.force_publish }}" == "true" ]; then
+            npm run release -- --ci -i patch --no-git.requireCleanWorkingDir
+          else
+            npm run release -- --ci -i patch
+          fi
           echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
 
       - name: Publish to NPM

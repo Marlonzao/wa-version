@@ -9,6 +9,12 @@ on:
       - '*'
   schedule:
     - cron: '0,30 * * * *'
+  workflow_dispatch:
+    inputs:
+      force_publish:
+        description: 'Force publish to npm (for testing)'
+        type: boolean
+        default: false
 
 jobs:
   wa-update:
@@ -69,18 +75,18 @@ jobs:
         run: git clean -fd
 
       - name: Release
-        if: ${{ steps.update.outputs.hasChanges == 'true' }}
+        if: ${{ steps.update.outputs.hasChanges == 'true' || inputs.force_publish == true }}
         id: release
         run: |
           npm run release -- --ci -i patch
           echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
 
       - name: Publish to NPM
-        if: ${{ steps.update.outputs.hasChanges == 'true' }}
+        if: ${{ steps.update.outputs.hasChanges == 'true' || inputs.force_publish == true }}
         run: npm publish --access public --provenance
 
       - name: Generate Changelog
-        if: ${{ steps.update.outputs.hasChanges == 'true' }}
+        if: ${{ steps.update.outputs.hasChanges == 'true' || inputs.force_publish == true }}
         id: generate_changelog
         run: |
           changelog=$(npm run changelog:last --silent)
@@ -89,7 +95,7 @@ jobs:
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
-        if: ${{ steps.update.outputs.hasChanges == 'true' }}
+        if: ${{ steps.update.outputs.hasChanges == 'true' || inputs.force_publish == true }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.release.outputs.version }}

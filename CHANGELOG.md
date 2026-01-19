@@ -1,3 +1,5 @@
+## [1.4.1909](https://github.com/Marlonzao/wa-version/compare/v1.4.1908...v1.4.1909) (2026-01-19)
+
 ## [1.4.1908](https://github.com/Marlonzao/wa-version/compare/v1.4.1907...v1.4.1908) (2026-01-19)
 
 ## [1.4.1907](https://github.com/Marlonzao/wa-version/compare/v1.4.1906...v1.4.1907) (2026-01-19)

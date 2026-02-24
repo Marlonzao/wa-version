@@ -12163,7 +12163,13 @@
       "beta": false,
       "released": "2026-02-23T21:52:03.901Z",
       "expire": "2026-02-23T21:52:03.901Z"
+    },
+    {
+      "version": "2.3000.1033916097-alpha",
+      "beta": false,
+      "released": "2026-02-24T00:41:53.195Z",
+      "expire": "2026-02-24T00:41:53.195Z"
     }
   ],
-  "currentAlpha": "2.3000.1033893291-alpha"
+  "currentAlpha": "2.3000.1033916097-alpha"
 }

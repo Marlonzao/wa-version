@@ -42,6 +42,11 @@ jobs:
           node-version: 22.x
           registry-url: 'https://registry.npmjs.org'
 
+      # O npm embutido no Node 22.x é da série 10.x; o trusted publishing (OIDC)
+      # só existe a partir do npm 11.5.1.
+      - name: Update npm
+        run: npm install -g npm@latest
+
       - name: Get npm cache directory
         id: npm-cache
         run: |
@@ -85,11 +90,12 @@ jobs:
           fi
           echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
 
+      # Autentica via OIDC (trusted publishing), sem token: o GitHub emite uma
+      # credencial efêmera por job. Requer o publisher registrado no npmjs.com
+      # apontando para este arquivo (wa-update.yml).
       - name: Publish to NPM
         if: ${{ steps.update.outputs.hasChanges == 'true' || inputs.force_publish == true }}
         run: npm publish --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Generate Changelog
         if: ${{ steps.update.outputs.hasChanges == 'true' || inputs.force_publish == true }}

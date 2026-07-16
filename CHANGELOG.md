@@ -1,3 +1,5 @@
+## [1.4.2797](https://github.com/Marlonzao/wa-version/compare/v1.4.2796...v1.4.2797) (2026-07-16)
+
 ## [1.4.2796](https://github.com/Marlonzao/wa-version/compare/v1.4.2795...v1.4.2796) (2026-07-16)
 
 ### Bug Fixes

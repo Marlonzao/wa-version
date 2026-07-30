@@ -1,6 +1,6 @@
 {
   "name": "@eusoumarlon/wa-version",
-  "version": "1.4.2874",
+  "version": "1.4.2875",
   "description": "List of WhatsApp Web HTML",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
